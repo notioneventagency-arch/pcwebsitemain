@@ -213,7 +213,7 @@ export default function Home() {
             </p>
 
             <p>
-              Max Mustermann
+              Padelclubbing
               <br />
               Musterstraße 1
               <br />
