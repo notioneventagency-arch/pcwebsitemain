@@ -5,13 +5,15 @@ const upcomingEvents = [
     title: 'All White Padel Night',
     date: '30 Mai 2026',
     place: 'Padelperformance Center Wildon',
-    formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeR4HIxDmxRnfUiCjOteiQAL4J6hDuuigdbSYr2ua1cGTgL0Q/viewform?usp=header',
+    formLink:
+      'https://docs.google.com/forms/d/e/1FAIpQLSeR4HIxDmxRnfUiCjOteiQAL4J6hDuuigdbSYr2ua1cGTgL0Q/viewform?usp=header',
   },
   {
     title: 'Sommerfest',
     date: '27 Juni 2026',
     place: 'Padelperformance Center Wildon',
-    formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
+    formLink:
+      'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
   },
   {
     title: 'PADELCLUBBING Finals',
@@ -30,18 +32,36 @@ const galleryImages = [
 
 const galleryVideos = ['/gallery/event1-video.mp4']
 
+const sponsorLogos = [
+  '/sponsors/redbull.png',
+  '/sponsors/head.png',
+  '/sponsors/bullpadel.png',
+  '/sponsors/sixt.png',
+]
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       {/* HERO */}
-      <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
-          PADELCLUBBING
-        </h1>
+      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
+        {/* Hintergrund-Logo */}
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+          <img
+            src="/Image (2).png"
+            alt="PadelClubbing Background Logo"
+            className="w-[800px] opacity-[0.05] animate-pulse"
+          />
+        </div>
 
-        <p className="mt-6 max-w-2xl text-lg text-zinc-400">
-          Sport. Music. Community.
-        </p>
+        <div className="relative z-10">
+          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
+            PADELCLUBBING
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg text-zinc-400">
+            Sport. Music. Community.
+          </p>
+        </div>
       </section>
 
       {/* EVENTS */}
@@ -53,64 +73,6 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
           {upcomingEvents.map((event) => (
             <div
-              key={event.title}
-              className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6"
-            >
-              <h3 className="text-2xl font-bold text-white">
-                {event.title}
-              </h3>
-
-              <p className="mt-3 text-zinc-400">
-                {event.date}
-              </p>
-
-              <p className="text-zinc-500">
-                {event.place}
-              </p>
-
-              <a
-                href={event.formLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-block rounded-full bg-pink-500 px-6 py-3 font-bold text-black transition hover:scale-105"
-              >
-                Jetzt anmelden
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* GALLERY */}
-      <section className="px-6 py-24">
-        <h2 className="mb-14 text-center text-5xl font-black text-pink-500">
-          Galerie
-        </h2>
-
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {galleryImages.map((image, index) => (
-            <Image
-              key={index}
-              src={image}
-              alt={`Galerie Bild ${index + 1}`}
-              width={600}
-              height={600}
-              className="h-[300px] w-full rounded-2xl object-cover"
-            />
-          ))}
-        </div>
-
-        <div className="mx-auto mt-12 grid max-w-4xl gap-6">
-          {galleryVideos.map((video, index) => (
-            <video
-              key={index}
-              controls
-              className="h-[400px] w-full rounded-2xl object-cover"
-            >
-              <source src={video} type="video/mp4" />
-            </video>
-          ))}
-        </div>
       </section>
 
       {/* CONTACT */}
