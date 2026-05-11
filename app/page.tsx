@@ -223,11 +223,11 @@ export default function Home() {
             </p>
 
             <p>
-              E-Mail: info@padelclubbing.com
+              E-Mail: thepadelclubbing@gmail.com
             </p>
 
             <p>
-              Telefon: +43 660 0000000
+              Telefon: +43 664 1259454     /  +43 676 7808458
             </p>
 
             <p>
