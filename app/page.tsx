@@ -22,7 +22,7 @@ const upcomingEvents = [
 ]
 
 const galleryImages = [
-  '/gallery/01.jpg',
+  'public/gallery/01.jpg',
   '/gallery/02.jpg',
   '/gallery/03.jpg',
   '/gallery/04.jpg',
