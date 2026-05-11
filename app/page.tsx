@@ -1,4 +1,19 @@
 import Image from 'next/image'
+                src={src}
+                alt={`Galerie Bild ${index + 1}`}
+                width={600}
+                height={600}
+                className="rounded-2xl object-cover"
+              />
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {galleryVideos.map((src, index) => (
+              <video key={index} controls className="w-full rounded-2xl">
+                <source src={src} type="video/mp4" />
+                Dein Browser unterstützt dieses Videoformat nicht.
+              </video>
             ))}
           </div>
         </div>
@@ -73,3 +88,4 @@ import Image from 'next/image'
       </footer>
     </main>
   )
+}
