@@ -129,7 +129,7 @@ export default function Home() {
          {/* SPONSOREN */}
       <section className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-pink-500">
-          Galerie
+          Sponsoren
         </h2>
 
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -142,18 +142,6 @@ export default function Home() {
               height={600}
               className="h-[300px] w-full rounded-2xl object-cover"
             />
-          ))}
-        </div>
-
-        <div className="mx-auto mt-12 grid max-w-4xl gap-6">
-          {galleryVideos.map((video, index) => (
-            <video
-              key={index}
-              controls
-              className="h-[400px] w-full rounded-2xl object-cover"
-            >
-              <source src={video} type="video/mp4" />
-            </video>
           ))}
         </div>
       </section>
