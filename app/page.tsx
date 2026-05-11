@@ -108,20 +108,35 @@ export default function Home() {
             Upcoming Events
           </h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {upcomingEvents.map((event) => (
-              <div
-                key={event.title}
-                className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6"
-              >
-                <h3 className="text-xl font-bold text-white">{event.title}</h3>
-                <p className="mt-2 text-zinc-400">{event.date}</p>
-                <p className="text-zinc-500">{event.place}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+         <div className="grid gap-6 md:grid-cols-3">
+  {upcomingEvents.map((event) => (
+    <div
+      key={event.title}
+      className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6"
+    >
+      <h3 className="text-xl font-bold text-white">
+        {event.title}
+      </h3>
+
+      <p className="mt-2 text-zinc-400">
+        {event.date}
+      </p>
+
+      <p className="text-zinc-500">
+        {event.place}
+      </p>
+
+      <a
+        href={event.formLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-6 inline-block rounded-full bg-pink-500 px-6 py-3 font-bold text-black transition hover:scale-105"
+      >
+        Jetzt anmelden
+      </a>
+    </div>
+  ))}
+</div>
 
       {/* GALERIE */}
       <section id="gallery" className="px-4 py-20 sm:px-6">
