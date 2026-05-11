@@ -32,9 +32,9 @@ const galleryVideos = ['/gallery/video.mp4']
 
 const sponsorenImages = [
   '/sponsoren/Tennismol_logo.png',
-  '/gallery/02.jpg',
-  '/gallery/03.jpg',
-  '/gallery/04.jpg',
+  '/sponsoren/02.jpg',
+  '/sponsoren/03.jpg',
+  '/sponsoren/04.jpg',
 ]
 
 export default function Home() {
