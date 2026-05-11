@@ -30,6 +30,13 @@ const galleryImages = [
 
 const galleryVideos = ['/gallery/video.mp4']
 
+const sponsorenImages = [
+  '/sponsoren/Tennismol_logo.png',
+  '/gallery/02.jpg',
+  '/gallery/03.jpg',
+  '/gallery/04.jpg',
+]
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
