@@ -32,16 +32,29 @@ const galleryVideos = ['/gallery/video.mp4']
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white overflow-hidden">
       {/* HERO */}
-      <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
-          PADELCLUBBING
-        </h1>
+      <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
+        {/* LOGO BACKGROUND */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <Image
+            src="/logo/logo.png"
+            alt="Logo Background"
+            width={900}
+            height={900}
+            className="opacity-[0.06] object-contain animate-pulse"
+          />
+        </div>
 
-        <p className="mt-6 max-w-2xl text-lg text-zinc-400">
-          Sport. Music. Community.
-        </p>
+        <div className="relative z-10">
+          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
+            PADELCLUBBING
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg text-zinc-400">
+            Sport. Music. Community.
+          </p>
+        </div>
       </section>
 
       {/* EVENTS */}
