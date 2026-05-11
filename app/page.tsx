@@ -1,78 +1,39 @@
 import Image from 'next/image'
-
-const upcomingEvents = [
-  {
-    title: 'All White Padel Night',
-    date: '30 Mai 2026',
-    place: 'Padelperformance Center Wildon',
-    formLink:
-      'https://docs.google.com/forms/d/e/1FAIpQLSeR4HIxDmxRnfUiCjOteiQAL4J6hDuuigdbSYr2ua1cGTgL0Q/viewform?usp=header',
-  },
-  {
-    title: 'Sommerfest',
-    date: '27 Juni 2026',
-    place: 'Padelperformance Center Wildon',
-    formLink:
-      'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
-  },
-  {
-    title: 'PADELCLUBBING Finals',
-    date: '09 August 2026',
-    place: 'Munich Rooftop Club',
-    formLink: 'https://forms.gle/DEINLINK3',
-  },
-]
-
-const galleryImages = [
-  '/gallery/event1-1.jpg',
-  '/gallery/event1-2.jpg',
-  '/gallery/event1-3.jpg',
-  '/gallery/event1-4.jpg',
-]
-
-const galleryVideos = ['/gallery/event1-video.mp4']
-
-const sponsorLogos = [
-  '/sponsors/redbull.png',
-  '/sponsors/head.png',
-  '/sponsors/bullpadel.png',
-  '/sponsors/sixt.png',
-]
-
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-black text-white">
-      {/* HERO */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
-        {/* Hintergrund-Logo */}
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <img
-            src="/Image (2).png"
-            alt="PadelClubbing Background Logo"
-            className="w-[800px] opacity-[0.05] animate-pulse"
-          />
         </div>
 
-        <div className="relative z-10">
-          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
-            PADELCLUBBING
-          </h1>
-
-          <p className="mt-6 max-w-2xl text-lg text-zinc-400">
-            Sport. Music. Community.
-          </p>
+        <div className="mx-auto mt-12 grid max-w-4xl gap-6">
+          {galleryVideos.map((video, index) => (
+            <video
+              key={index}
+              controls
+              className="h-[400px] w-full rounded-2xl object-cover"
+            >
+              <source src={video} type="video/mp4" />
+            </video>
+          ))}
         </div>
       </section>
 
-      {/* EVENTS */}
-      <section className="px-6 py-24">
-        <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
-          Upcoming Events
+      {/* SPONSOREN */}
+      <section className="overflow-hidden border-y border-zinc-800 px-6 py-24">
+        <h2 className="mb-12 text-center text-5xl font-black text-white">
+          Unsere Sponsoren
         </h2>
 
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-          {upcomingEvents.map((event) => (
-            <div
+        <div className="overflow-hidden">
+          <div className="flex w-max animate-marquee gap-16">
+            {[...sponsorLogos, ...sponsorLogos].map((logo, index) => (
+              <Image
+                key={index}
+                src={logo}
+                alt={`Sponsor ${index + 1}`}
+                width={180}
+                height={80}
+                className="h-20 w-auto object-contain opacity-80 transition hover:opacity-100"
+              />
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* CONTACT */}
@@ -115,51 +76,4 @@ export default function Home() {
             className="rounded-full bg-cyan-400 px-8 py-4 font-bold text-black transition hover:scale-105"
           >
             Nachricht senden
-          </button>
-        </form>
-      </section>
-
-      {/* IMPRESSUM */}
-      <section
-        id="impressum"
-        className="border-t border-zinc-800 px-6 py-20"
-      >
-        <div className="mx-auto max-w-4xl text-zinc-400">
-          <h2 className="mb-8 text-4xl font-black text-white">
-            Impressum
-          </h2>
-
-          <div className="space-y-4 leading-relaxed">
-            <p>
-              <strong>PADELCLUBBING</strong>
-            </p>
-
-            <p>
-              Max Mustermann
-              <br />
-              Musterstraße 1
-              <br />
-              8410 Wildon
-              <br />
-              Österreich
-            </p>
-
-            <p>
-              E-Mail: info@padelclubbing.com
-            </p>
-
-            <p>
-              Telefon: +43 660 0000000
-            </p>
-
-            <p>
-              Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-              <br />
-              Max Mustermann
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-  )
-}
+          </button
