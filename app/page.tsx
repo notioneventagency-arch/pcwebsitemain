@@ -138,7 +138,7 @@ export default function Home() {
                 alt={`Galerie Bild ${index + 1}`}
                 width={600}
                 height={600}
-                className=className="rounded-2xl object-cover w-full h-[300px]"
+                className="rounded-2xl object-cover w-full h-[300px]"
               />
             ))}
           </div>
