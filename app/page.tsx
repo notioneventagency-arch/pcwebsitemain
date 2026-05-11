@@ -65,31 +65,4 @@ export default function Home() {
         <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
           Upcoming Events
         </h2>
-
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
-          {upcomingEvents.map((event) => (
-            <div
-              key={event.title}
-              className="rounded-3xl border border-zinc-800 bg-zinc-900/80 backdrop-blur p-6 transition hover:scale-[1.02]"
-            >
-              <h3 className="text-2xl font-bold text-white">
-                {event.title}
-              </h3>
-
-              <p className="mt-3 text-zinc-400">{event.date}</p>
-
-              <p className="text-zinc-500">{event.place}</p>
-
-              <a
-                href={event.formLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-block rounded-full bg-pink-500 px-6 py-3 font-bold text-black transition hover:scale-105"
-              >
-                Jetzt anmelden
-        </form>
-      </section>
-    </main>
-  )
 }
-
