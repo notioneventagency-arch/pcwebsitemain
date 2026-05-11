@@ -126,6 +126,30 @@ export default function Home() {
         </div>
       </section>
 
+       {/* SPONSOREN */}
+      <section className="border-y border-zinc-800 bg-zinc-950 px-6 py-20">
+        <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
+          Sponsoren
+        </h2>
+
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-8 md:grid-cols-4 items-center">
+          {sponsors.map((sponsor, index) => (
+            <div
+              key={index}
+              className="flex h-40 items-center justify-center rounded-3xl border border-zinc-800 bg-zinc-900 p-6 transition hover:border-pink-500"
+            >
+              <Image
+                src={sponsor}
+                alt={`Sponsor ${index + 1}`}
+                width={200}
+                height={120}
+                className="max-h-24 w-auto object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+      
       {/* CONTACT */}
       <section className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
