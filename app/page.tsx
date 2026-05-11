@@ -5,13 +5,13 @@ const upcomingEvents = [
     title: 'All White Padel Night',
     date: '30 Mai 2026',
     place: 'Padelperformance Center Wildon',
-    formLink: 'https://forms.gle/DEINLINK1',
+    formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeR4HIxDmxRnfUiCjOteiQAL4J6hDuuigdbSYr2ua1cGTgL0Q/viewform?usp=header',
   },
   {
     title: 'Sommerfest',
     date: '27 Juni 2026',
     place: 'Padelperformance Center Wildon',
-    formLink: 'https://forms.gle/DEINLINK2',
+    formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
   },
   {
     title: 'PADELCLUBBING Finals',
