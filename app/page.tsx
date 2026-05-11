@@ -59,7 +59,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg text-zinc-400">
-            Sport. Music. Community.
+            Padel. Music. Community.
           </p>
         </div>
       </section>
