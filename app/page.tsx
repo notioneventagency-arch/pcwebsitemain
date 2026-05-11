@@ -14,21 +14,21 @@ const upcomingEvents = [
     formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
   },
   {
-    title: 'PADELCLUBBING Finals',
-    date: '09 August 2026',
-    place: 'Munich Rooftop Club',
+    title: 'PADELCLUBBING ',
+    date: 'XXX Juli 2026',
+    place: 'tbd',
     formLink: 'https://forms.gle/DEINLINK3',
   },
 ]
 
-const publicImages = [
-  'public/gallery/01.jpg',
+const galleryImages = [
+  '/gallery/01.jpg',
   '/gallery/02.jpg',
   '/gallery/03.jpg',
   '/gallery/04.jpg',
 ]
 
-const publicVideos = ['/gallery/video.mp4']
+const galleryVideos = ['/gallery/video.mp4']
 
 export default function Home() {
   return (
