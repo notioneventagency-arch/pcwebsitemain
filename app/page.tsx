@@ -2,14 +2,14 @@ import Image from 'next/image'
 
 const upcomingEvents = [
   {
-    title: 'Miami Neon Padel Night',
-    date: '12 Juli 2026',
-    place: 'Berlin Indoor Arena',
+    title: 'All White Padel Night',
+    date: '30 Mai 2026',
+    place: 'Padelperformance Center Wildon',
   },
   {
-    title: 'Summer Club Tournament',
-    date: '26 Juli 2026',
-    place: 'Hamburg Beach Courts',
+    title: 'Sommerfest',
+    date: '27 Juni 2026',
+    place: 'Padelperformance Center Wildon',
   },
   {
     title: 'PADELCLUBBING Finals',
