@@ -22,13 +22,13 @@ const upcomingEvents = [
 ]
 
 const galleryImages = [
-  '/gallery/event1-1.jpg',
-  '/gallery/event1-2.jpg',
-  '/gallery/event1-3.jpg',
-  '/gallery/event1-4.jpg',
+  '/gallery/01.jpg',
+  '/gallery/02.jpg',
+  '/gallery/03.jpg',
+  '/gallery/04.jpg',
 ]
 
-const galleryVideos = ['/gallery/event1-video.mp4']
+const galleryVideos = ['/gallery/video.mp4']
 
 export default function Home() {
   return (
