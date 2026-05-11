@@ -126,7 +126,7 @@ export default function Home() {
         </div>
       </section>
 
-         {/* GALLERY */}
+         {/* SPONSOREN */}
       <section className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-pink-500">
           Galerie
