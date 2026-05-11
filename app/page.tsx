@@ -5,19 +5,15 @@ const upcomingEvents = [
     title: 'All White Padel Night',
     date: '30 Mai 2026',
     place: 'Padelperformance Center Wildon',
-    formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeR4HIxDmxRnfUiCjOteiQAL4J6hDuuigdbSYr2ua1cGTgL0Q/viewform?usp=header',
+    formLink:
+      'https://docs.google.com/forms/d/e/1FAIpQLSeR4HIxDmxRnfUiCjOteiQAL4J6hDuuigdbSYr2ua1cGTgL0Q/viewform?usp=header',
   },
   {
     title: 'Sommerfest',
     date: '27 Juni 2026',
     place: 'Padelperformance Center Wildon',
-    formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
-  },
-  {
-    title: 'PADELCLUBBING ',
-    date: 'XXX Juli 2026',
-    place: 'tbd',
-    formLink: 'https://forms.gle/DEINLINK3',
+    formLink:
+      'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
   },
 ]
 
@@ -26,22 +22,42 @@ const galleryImages = [
   '/gallery/02.jpg',
   '/gallery/03.jpg',
   '/gallery/04.jpg',
+  '/gallery/05.jpg',
+  '/gallery/06.jpg',
 ]
 
-const galleryVideos = ['/gallery/video.mp4']
+const sponsors = [
+  '/sponsors/sponsor1.png',
+  '/sponsors/sponsor2.png',
+  '/sponsors/sponsor3.png',
+  '/sponsors/sponsor4.png',
+]
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white overflow-hidden">
       {/* HERO */}
-      <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
-        <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
-          PADELCLUBBING
-        </h1>
+      <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
+        {/* LOGO BACKGROUND */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <Image
+            src="/logo/logo.png"
+            alt="Logo Background"
+            width={900}
+            height={900}
+            className="opacity-[0.06] object-contain animate-pulse"
+          />
+        </div>
 
-        <p className="mt-6 max-w-2xl text-lg text-zinc-400">
-          Sport. Music. Community.
-        </p>
+        <div className="relative z-10">
+          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
+            PADELCLUBBING
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg text-zinc-400">
+            Sport. Music. Community.
+          </p>
+        </div>
       </section>
 
       {/* EVENTS */}
@@ -50,23 +66,19 @@ export default function Home() {
           Upcoming Events
         </h2>
 
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
           {upcomingEvents.map((event) => (
             <div
               key={event.title}
-              className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6"
+              className="rounded-3xl border border-zinc-800 bg-zinc-900/80 backdrop-blur p-6 transition hover:scale-[1.02]"
             >
               <h3 className="text-2xl font-bold text-white">
                 {event.title}
               </h3>
 
-              <p className="mt-3 text-zinc-400">
-                {event.date}
-              </p>
+              <p className="mt-3 text-zinc-400">{event.date}</p>
 
-              <p className="text-zinc-500">
-                {event.place}
-              </p>
+              <p className="text-zinc-500">{event.place}</p>
 
               <a
                 href={event.formLink}
@@ -75,85 +87,6 @@ export default function Home() {
                 className="mt-6 inline-block rounded-full bg-pink-500 px-6 py-3 font-bold text-black transition hover:scale-105"
               >
                 Jetzt anmelden
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* GALLERY */}
-      <section className="px-6 py-24">
-        <h2 className="mb-14 text-center text-5xl font-black text-pink-500">
-          Galerie
-        </h2>
-
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {galleryImages.map((image, index) => (
-            <Image
-              key={index}
-              src={image}
-              alt={`Galerie Bild ${index + 1}`}
-              width={600}
-              height={600}
-              className="h-[300px] w-full rounded-2xl object-cover"
-            />
-          ))}
-        </div>
-
-        <div className="mx-auto mt-12 grid max-w-4xl gap-6">
-          {galleryVideos.map((video, index) => (
-            <video
-              key={index}
-              controls
-              className="h-[400px] w-full rounded-2xl object-cover"
-            >
-              <source src={video} type="video/mp4" />
-            </video>
-          ))}
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section className="px-6 py-24">
-        <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
-          Kontakt
-        </h2>
-
-        <form
-          action="https://formspree.io/f/xwvyavjd"
-          method="POST"
-          className="mx-auto max-w-2xl space-y-6"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-4 text-white outline-none"
-            required
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="E-Mail"
-            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-4 text-white outline-none"
-            required
-          />
-
-          <textarea
-            name="message"
-            placeholder="Nachricht"
-            rows={6}
-            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-4 text-white outline-none"
-            required
-          />
-
-          <button
-            type="submit"
-            className="rounded-full bg-cyan-400 px-8 py-4 font-bold text-black transition hover:scale-105"
-          >
-            Nachricht senden
-          </button>
         </form>
       </section>
 
