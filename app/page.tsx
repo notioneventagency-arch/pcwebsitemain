@@ -89,48 +89,6 @@ export default function Home() {
                 Jetzt anmelden
         </form>
       </section>
-
-      {/* IMPRESSUM */}
-      <section
-        id="impressum"
-        className="border-t border-zinc-800 px-6 py-20"
-      >
-        <div className="mx-auto max-w-4xl text-zinc-400">
-          <h2 className="mb-8 text-4xl font-black text-white">
-            Impressum
-          </h2>
-
-          <div className="space-y-4 leading-relaxed">
-            <p>
-              <strong>PADELCLUBBING</strong>
-            </p>
-
-            <p>
-              Max Mustermann
-              <br />
-              Musterstraße 1
-              <br />
-              8410 Wildon
-              <br />
-              Österreich
-            </p>
-
-            <p>
-              E-Mail: info@padelclubbing.com
-            </p>
-
-            <p>
-              Telefon: +43 660 0000000
-            </p>
-
-            <p>
-              Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-              <br />
-              Max Mustermann
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
   )
 }
