@@ -140,11 +140,11 @@ export default function Home() {
         </h2>
 
         <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {galleryImages.map((image, index) => (
+          {sponsorenImages.map((image, index) => (
             <Image
               key={index}
               src={image}
-              alt={`Galerie Bild ${index + 1}`}
+              alt={`Sponsoren Bild ${index + 1}`}
               width={600}
               height={600}
               className="h-[300px] w-full rounded-2xl object-cover"
