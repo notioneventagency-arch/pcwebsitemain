@@ -28,7 +28,7 @@ const galleryImages = [
   '/gallery/04.png',
 ]
 
-const galleryVideos = ['/gallery/video.mp4']
+const galleryVideos = ['/gallery/Adobe Express - TAPEDESIGN KURZVIDEO.mp4']
 
 const sponsorenImages = [
   '/sponsoren/Image1.png',
