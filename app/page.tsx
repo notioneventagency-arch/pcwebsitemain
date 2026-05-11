@@ -19,8 +19,8 @@ const upcomingEvents = [
 ]
 
 const galleryImages = [
-  '/gallery/event1-1.jpg',
-  '/gallery/event1-2.jpg',
+  '/gallery/Event1-1.jpeg.png',
+  '/gallery/Event1-2.jpeg.png',
   '/gallery/event1-3.jpg',
   '/gallery/event1-4.jpg',
 ]
