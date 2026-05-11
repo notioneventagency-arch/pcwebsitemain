@@ -208,8 +208,8 @@ export default function Home() {
             <p>Musterstraße 1</p>
             <p>8401 Kalsdorf bei Graz</p>
             <p>Österreich</p>
-            <p>E-Mail: info@padelclubbing.com</p>
-            <p>Telefon: +43 664 1234567</p>
+            <p>E-Mail: thepadelclubbing@gmail.com</p>
+            <p>Telefon: +43 676 7808458  /  +43 664 1234567</p>
           </div>
         </div>
       </section>
