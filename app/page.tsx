@@ -108,7 +108,7 @@ export default function Home() {
             Upcoming Events
           </h2>
 
-         <div className="grid gap-6 md:grid-cols-3">
+   <div className="grid gap-6 md:grid-cols-3">
   {upcomingEvents.map((event) => (
     <div
       key={event.title}
