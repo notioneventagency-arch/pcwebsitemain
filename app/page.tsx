@@ -145,8 +145,8 @@ export default function Home() {
               key={index}
               src={image}
               alt={`Sponsoren Bild ${index + 1}`}
-              width={600}
-              height={600}
+              width={300}
+              height={300}
               className="h-[300px] w-full rounded-2xl object-cover"
             />
           ))}
