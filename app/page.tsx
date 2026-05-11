@@ -38,7 +38,7 @@ export default function Home() {
         {/* LOGO BACKGROUND */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <Image
-           src="/logo/logo.png"
+           src="/logo/Logo.1jpg"
             alt="Logo Background"
             width={900}
             height={900}
