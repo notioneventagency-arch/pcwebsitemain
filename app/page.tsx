@@ -22,10 +22,10 @@ const upcomingEvents = [
 ]
 
 const galleryImages = [
-  '/gallery/01.jpg',
-  '/gallery/02.jpg',
+  '/gallery/01.png',
+  '/gallery/02.png',
   '/gallery/03.jpg',
-  '/gallery/04.jpg',
+  '/gallery/04.png',
 ]
 
 const galleryVideos = ['/gallery/video.mp4']
@@ -45,7 +45,7 @@ export default function Home() {
         {/* LOGO BACKGROUND */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <Image
-           src="/logo/Logo.1jpg"
+           src="/logo/Logo.1.jpg"
             alt="Logo Background"
             width={900}
             height={900}
