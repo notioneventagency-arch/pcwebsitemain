@@ -33,20 +33,20 @@ const galleryVideos = ['/gallery/Adobe Express - TAPEDESIGN KURZVIDEO.mp4']
 const sponsorenImages = [
   {
     image: '/sponsoren/Image1.png',
-    link: 'https://notionagency.at',
+    link: 'https://www.notionagency.at',
     name: 'Notion Agency',
   },
 
   {
     image: '/sponsoren/Image2.png',
-    link: 'https://nike.com',
-    name: 'Nike',
+    link: 'https://tennismol.at/?srsltid=AfmBOorWXvNaF9EqWT-4nePL4Gk2AL2kcMPTTUMUO9I0AF1cOUBr92_I',
+    name: 'TennisMol',
   },
 
   {
     image: '/sponsoren/Image3.png',
-    link: 'https://adidas.com',
-    name: 'Adidas',
+    link: 'https://www.tape-design.com/',
+    name: 'Tapedesign',
   },
 
   {
