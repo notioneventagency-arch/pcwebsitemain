@@ -66,7 +66,7 @@ export default function Home() {
   <div className="absolute bottom-[-250px] right-[-200px] h-[500px] w-[500px] rounded-full bg-pink-500/20 blur-[160px]" />
 </div>
       {/* NAVIGATION */}
-<header className="fixed top-0 left-0 z-50 w-full border-b border-zinc-800 bg-black/40 backdrop-blur-x1">
+<header className="fixed top-0 left-0 z-50 w-full border-b border-zinc-800 bg-black/40 backdrop-blur-xl">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
     {/* LOGO */}
     <a
