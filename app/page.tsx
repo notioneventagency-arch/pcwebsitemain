@@ -58,9 +58,9 @@ export default function Home() {
             PADELCLUBBING
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg text-zinc-400">
-            Padel. Music. Community.
-          </p>
+         <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-zinc-400">
+  Padel. Music. Community.
+</p>
         </div>
       </section>
 
