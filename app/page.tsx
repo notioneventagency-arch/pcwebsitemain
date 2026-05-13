@@ -388,4 +388,6 @@ export default function Home() {
     © 2026 PADELCLUBBING — All Rights Reserved
   </div>
 </footer>
-
+</main>
+  )
+}
