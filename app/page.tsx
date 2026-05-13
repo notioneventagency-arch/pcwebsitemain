@@ -31,10 +31,29 @@ const galleryImages = [
 const galleryVideos = ['/gallery/Adobe Express - TAPEDESIGN KURZVIDEO.mp4']
 
 const sponsorenImages = [
-  '/sponsoren/Image1.png',
-  '/sponsoren/Image2.png',
-  '/sponsoren/Image3.png',
-  '/sponsoren/Image1.png',
+  {
+    image: '/sponsoren/Image1.png',
+    link: 'https://notionagency.at',
+    name: 'Notion Agency',
+  },
+
+  {
+    image: '/sponsoren/Image2.png',
+    link: 'https://nike.com',
+    name: 'Nike',
+  },
+
+  {
+    image: '/sponsoren/Image3.png',
+    link: 'https://adidas.com',
+    name: 'Adidas',
+  },
+
+  {
+    image: '/sponsoren/Image4.png',
+    link: 'https://redbull.com',
+    name: 'Red Bull',
+  },
 ]
 
 export default function Home() {
@@ -204,25 +223,28 @@ export default function Home() {
       </section>
 
          {/* SPONSOREN */}
-     <section id="sponsoren" className="px-6 py-24">
+  <section id="sponsoren" className="px-6 py-24">
   <h2 className="mb-14 text-center text-3xl sm:text-4xl md:text-5xl font-black text-pink-500">
     Sponsoren
   </h2>
 
   <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 md:grid-cols-4">
-    {sponsorenImages.map((image, index) => (
-      <div
+    {sponsorenImages.map((sponsor, index) => (
+      <a
         key={index}
-        className="flex items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition duration-300 hover:scale-105 hover:border-pink-500"
+        href={sponsor.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition duration-300 hover:scale-105 hover:border-pink-500 hover:shadow-[0_0_30px_rgba(236,72,153,0.3)]"
       >
         <Image
-          src={image}
-          alt={`Sponsoren Bild ${index + 1}`}
+          src={sponsor.image}
+          alt={sponsor.name}
           width={300}
           height={160}
-          className="h-[120px] w-full object-contain transition duration-300 hover:scale-105"
+          className="h-[120px] w-full object-contain"
         />
-      </div>
+      </a>
     ))}
   </div>
 </section>
