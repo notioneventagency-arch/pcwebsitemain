@@ -162,7 +162,7 @@ export default function Home() {
                 href={event.formLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-block rounded-full bg-pink-500 px-6 py-3 font-bold text-black transition hover:scale-105"
+                className="mt-6 inline-block rounded-full bg-pink-500 px-6 py-3 font-bold text-black transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(236,72,153,0.6)]"
               >
                 Jetzt anmelden
               </a>
