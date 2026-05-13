@@ -9,24 +9,16 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata = {
   title: 'PADELCLUBBING',
   description: 'Padel. Music. Community.',
-}
   generator: 'v0.app',
+
   icons: {
     icon: [
       {
         url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        sizes: '32x32',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
   },
 }
 
