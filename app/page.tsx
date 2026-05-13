@@ -316,7 +316,7 @@ export default function Home() {
   <div className="flex flex-wrap items-center justify-center gap-6">
     
     <a
-      href="https://instagram.com"
+      href="https://www.instagram.com/padelclubbing?igsh=cDNkaWVlZ2xramQz&utm_source=qr"
       target="_blank"
       rel="noopener noreferrer"
       className="rounded-full border border-pink-500 bg-pink-500/10 px-8 py-4 font-bold text-pink-400 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)]"
@@ -325,16 +325,7 @@ export default function Home() {
     </a>
 
     <a
-      href="https://tiktok.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rounded-full border border-cyan-400 bg-cyan-400/10 px-8 py-4 font-bold text-cyan-400 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]"
-    >
-      TikTok
-    </a>
-
-    <a
-      href="https://wa.me/436641259454"
+      href="https://chat.whatsapp.com/KZkvvK08zmpILxD8YPwNAr?mode=gi_t"
       target="_blank"
       rel="noopener noreferrer"
       className="rounded-full border border-green-500 bg-green-500/10 px-8 py-4 font-bold text-green-400 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]"
