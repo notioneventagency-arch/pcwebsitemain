@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
       {/* HERO */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
+      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center sm:px-6">
         {/* LOGO BACKGROUND */}
    <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
   <Image
