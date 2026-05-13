@@ -153,6 +153,20 @@ export default function Home() {
         </div>
       </section>
 
+     {/* COUNTDOWN */}
+<section className="px-6 py-20 text-center">
+  <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
+    Next Event
+  </p>
+
+  <h2 className="mt-4 bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-4xl sm:text-5xl md:text-6xl font-black text-transparent">
+    30 MAI 2026
+  </h2>
+
+  <p className="mt-6 text-xl text-zinc-300">
+    All White Padel Night
+  </p>
+</section>
       {/* EVENTS */}
       <section id="events" className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
@@ -293,6 +307,41 @@ export default function Home() {
         </form>
       </section>
 
+     {/* SOCIAL MEDIA */}
+<section className="px-6 py-20">
+  <h2 className="mb-10 text-center text-3xl sm:text-4xl md:text-5xl font-black text-cyan-400">
+    Follow Us
+  </h2>
+
+  <div className="flex flex-wrap items-center justify-center gap-6">
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full border border-pink-500 bg-pink-500/10 px-8 py-4 font-bold text-pink-400 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(236,72,153,0.5)]"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://tiktok.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full border border-cyan-400 bg-cyan-400/10 px-8 py-4 font-bold text-cyan-400 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]"
+    >
+      TikTok
+    </a>
+
+    <a
+      href="https://wa.me/436641259454"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-full border border-green-500 bg-green-500/10 px-8 py-4 font-bold text-green-400 transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]"
+    >
+      WhatsApp
+    </a>
+  </div>
+</section>
       {/* IMPRESSUM */}
       <section
         id="impressum"
