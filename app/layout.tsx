@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata = {
   title: 'PADELCLUBBING',
-  description: 'Padel. Music. Community.',
+  description: 'PADEL. MUSIC. COMMUNITY.',
   generator: 'v0.app',
 
   icons: {
