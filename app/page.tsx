@@ -47,7 +47,7 @@ export default function Home() {
   <div className="absolute bottom-[-250px] right-[-200px] h-[500px] w-[500px] rounded-full bg-pink-500/20 blur-[160px]" />
 </div>
       {/* NAVIGATION */}
-<header className="fixed top-0 left-0 z-50 w-full border-b border-zinc-800 bg-black/70 backdrop-blur-md">
+<header className="fixed top-0 left-0 z-50 w-full border-b border-zinc-800 bg-black/40 backdrop-blur-x1">
   <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
     {/* LOGO */}
     <a
@@ -124,7 +124,7 @@ export default function Home() {
 </div>
 
         <div className="relative z-10">
-          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-transparent">
+          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-transparent drop-shadow-[0_0_30px_rgba(34,211,238,0.35)]">
             PADELCLUBBING
           </h1>
 
