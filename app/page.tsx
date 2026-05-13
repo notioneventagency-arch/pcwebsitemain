@@ -43,7 +43,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center">
         {/* LOGO BACKGROUND */}
-      <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
+   <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
   <Image
     src="/logo/Logo.1.jpg"
     alt="Logo Background"
