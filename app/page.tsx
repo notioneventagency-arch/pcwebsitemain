@@ -50,7 +50,7 @@ export default function Home() {
     width={1200}
     height={1200}
     priority
-    className="opacity-[0.10] blur-[1px] object-contain"
+    className="opacity-[0.20] blur-[1px] object-contain"
   />
 </div>
 
