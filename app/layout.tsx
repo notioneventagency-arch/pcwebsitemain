@@ -6,9 +6,10 @@ import './globals.css'
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: 'Notion Agency',
-  description: 'Strategy, Design & Experiences that convert attention into real business. 3D Logos, Branding, Merch & Event Production.',
+export const metadata = {
+  title: 'PADELCLUBBING',
+  description: 'Padel. Music. Community.',
+}
   generator: 'v0.app',
   icons: {
     icon: [
