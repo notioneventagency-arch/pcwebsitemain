@@ -101,7 +101,10 @@ export default function Home() {
   </div>
 </header>
       {/* HERO */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center sm:px-6">
+      <section
+  id="top"
+  className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center sm:px-6"
+>
         {/* LOGO BACKGROUND */}
 <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
   <Image
