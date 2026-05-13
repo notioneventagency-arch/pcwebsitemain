@@ -129,7 +129,7 @@ export default function Home() {
       </section>
 
       {/* EVENTS */}
-      <section className="px-6 py-24">
+      <section id="events" className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
           Upcoming Events
         </h2>
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* GALLERY */}
-      <section className="px-6 py-24">
+      <section id="gallery" className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-pink-500">
           Galerie
         </h2>
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
          {/* SPONSOREN */}
-      <section className="px-6 py-24">
+      <section id="sponsoren" className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-pink-500">
           Sponsoren
         </h2>
@@ -218,7 +218,7 @@ export default function Home() {
       </section>
       
       {/* CONTACT */}
-      <section className="px-6 py-24">
+      <section id="kontakt" className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
           Kontakt
         </h2>
