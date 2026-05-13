@@ -148,7 +148,7 @@ export default function Home() {
           </h1>
 
          <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-zinc-400">
-  Padel. Music. Community.
+  PADEL. MUSIC. COMMUNITY.
 </p>
         </div>
       </section>
