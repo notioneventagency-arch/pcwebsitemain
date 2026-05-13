@@ -45,12 +45,12 @@ export default function Home() {
         {/* LOGO BACKGROUND */}
 <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
   <Image
-    src="/logo/Logo.1.jpg"
+    src="/logo/Logo.2.jpg"
     alt="Background Logo"
-    width={900}
-    height={900}
+    width={1200}
+    height={1200}
     priority
-    className="opacity-[0.06] blur-[1px] object-contain"
+    className="opacity-[0.10] blur-[1px] object-contain"
   />
 </div>
 
