@@ -144,7 +144,7 @@ export default function Home() {
           {upcomingEvents.map((event) => (
             <div
               key={event.title}
-              className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6"
+              className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,0.25)]"
             >
               <h3 className="text-2xl font-bold text-white">
                 {event.title}
