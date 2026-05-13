@@ -213,7 +213,7 @@ export default function Home() {
     {sponsorenImages.map((image, index) => (
       <div
         key={index}
-        className="flex items-center justify-center rounded-3xl border border-zinc-800 bg-zinc-900/40 p-4 backdrop-blur-sm"
+        className="flex items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl transition duration-300 hover:scale-105 hover:border-pink-500"
       >
         <Image
           src={image}
