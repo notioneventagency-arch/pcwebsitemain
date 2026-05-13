@@ -40,6 +40,66 @@ const sponsorenImages = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
+      {/* NAVIGATION */}
+<header className="fixed top-0 left-0 z-50 w-full border-b border-zinc-800 bg-black/70 backdrop-blur-md">
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
+    {/* LOGO */}
+    <a
+      href="#top"
+      className="flex items-center gap-3 transition hover:opacity-80"
+    >
+      <Image
+        src="/logo/Logo.1.jpg"
+        alt="PADELCLUBBING Logo"
+        width={45}
+        height={45}
+        className="rounded-full object-cover"
+      />
+
+      <span className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-lg font-black text-transparent hidden sm:block">
+        PADELCLUBBING
+      </span>
+    </a>
+
+    {/* NAVIGATION LINKS */}
+    <nav className="flex items-center gap-4 md:gap-8 text-sm md:text-base font-semibold text-zinc-300">
+      <a
+        href="#events"
+        className="transition hover:text-cyan-400"
+      >
+        Events
+      </a>
+
+      <a
+        href="#gallery"
+        className="transition hover:text-pink-400"
+      >
+        Galerie
+      </a>
+
+      <a
+        href="#sponsoren"
+        className="transition hover:text-cyan-400"
+      >
+        Sponsoren
+      </a>
+
+      <a
+        href="#kontakt"
+        className="transition hover:text-pink-400"
+      >
+        Kontakt
+      </a>
+
+      <a
+        href="#impressum"
+        className="transition hover:text-cyan-400"
+      >
+        Impressum
+      </a>
+    </nav>
+  </div>
+</header>
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center sm:px-6">
         {/* LOGO BACKGROUND */}
