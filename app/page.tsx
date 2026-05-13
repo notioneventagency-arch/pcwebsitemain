@@ -1,5 +1,18 @@
 import Image from 'next/image'
+{/* COUNTDOWN */}
+<section className="px-6 py-20 text-center">
+  <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
+    Next Event
+  </p>
 
+  <h2 className="mt-4 bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-4xl sm:text-5xl md:text-6xl font-black text-transparent">
+    30 MAI 2026
+  </h2>
+
+  <p className="mt-6 text-xl text-zinc-300">
+    All White Padel Night
+  </p>
+</section>
 const upcomingEvents = [
   {
     title: 'All White Padel Night',
@@ -153,20 +166,6 @@ export default function Home() {
         </div>
       </section>
 
-     {/* COUNTDOWN */}
-<section className="px-6 py-20 text-center">
-  <p className="text-sm uppercase tracking-[0.3em] text-zinc-500">
-    Next Event
-  </p>
-
-  <h2 className="mt-4 bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-4xl sm:text-5xl md:text-6xl font-black text-transparent">
-    30 MAI 2026
-  </h2>
-
-  <p className="mt-6 text-xl text-zinc-300">
-    All White Padel Night
-  </p>
-</section>
       {/* EVENTS */}
       <section id="events" className="px-6 py-24">
         <h2 className="mb-14 text-center text-5xl font-black text-cyan-400">
