@@ -51,8 +51,8 @@ const sponsorenImages = [
 
   {
     image: '/sponsoren/Image4.png',
-    link: 'https://redbull.com',
-    name: 'Red Bull',
+    link: 'https://soa-nutrition.at/',
+    name: 'SoA',
   },
 ]
 
