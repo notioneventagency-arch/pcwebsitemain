@@ -54,7 +54,7 @@ export default function Home() {
 </div>
 
         <div className="relative z-10">
-          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-6xl font-black text-transparent md:text-8xl">
+          <h1 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black leading-tight text-transparent">
             PADELCLUBBING
           </h1>
 
