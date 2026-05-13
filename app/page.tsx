@@ -43,13 +43,13 @@ export default function Home() {
       {/* HERO */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center sm:px-6">
         {/* LOGO BACKGROUND */}
-   <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
+ <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none">
   <Image
     src="/logo/Logo.1.jpg"
     alt="Logo Background"
     fill
     priority
-    className="object-contain opacity-[0.05] scale-75 sm:scale-90 md:scale-100"
+    className="object-contain opacity-[0.04] scale-75 sm:scale-90 md:scale-100 blur-[1px]"
   />
 </div>
 
