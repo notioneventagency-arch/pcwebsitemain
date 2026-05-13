@@ -198,24 +198,28 @@ export default function Home() {
       </section>
 
          {/* SPONSOREN */}
-      <section id="sponsoren" className="px-6 py-24">
-        <h2 className="mb-14 text-center text-5xl font-black text-pink-500">
-          Sponsoren
-        </h2>
+     <section id="sponsoren" className="px-6 py-24">
+  <h2 className="mb-14 text-center text-3xl sm:text-4xl md:text-5xl font-black text-pink-500">
+    Sponsoren
+  </h2>
 
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {sponsorenImages.map((image, index) => (
-            <Image
-              key={index}
-              src={image}
-              alt={`Sponsoren Bild ${index + 1}`}
-              width={300}
-              height={300}
-              className="h-[300px] w-full rounded-2xl object-cover"
-            />
-          ))}
-        </div>
-      </section>
+  <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 md:grid-cols-4">
+    {sponsorenImages.map((image, index) => (
+      <div
+        key={index}
+        className="flex items-center justify-center rounded-3xl border border-zinc-800 bg-zinc-900/40 p-4 backdrop-blur-sm"
+      >
+        <Image
+          src={image}
+          alt={`Sponsoren Bild ${index + 1}`}
+          width={300}
+          height={160}
+          className="h-[120px] w-full object-contain transition duration-300 hover:scale-105"
+        />
+      </div>
+    ))}
+  </div>
+</section>
       
       {/* CONTACT */}
       <section id="kontakt" className="px-6 py-24">
