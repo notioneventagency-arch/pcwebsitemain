@@ -342,47 +342,50 @@ export default function Home() {
   </div>
 </section>
       {/* IMPRESSUM */}
-      <section
-        id="impressum"
-        className="border-t border-zinc-800 px-6 py-20"
+    <footer
+  id="impressum"
+  className="border-t border-white/10 bg-black/40 px-6 py-16 backdrop-blur-xl"
+>
+  <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 md:flex-row">
+    
+    {/* LEFT */}
+    <div>
+      <h2 className="bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-3xl font-black text-transparent">
+        PADELCLUBBING
+      </h2>
+
+      <p className="mt-4 text-zinc-400">
+        Padel. Music. Community.
+      </p>
+    </div>
+
+    {/* CENTER */}
+    <div className="text-center text-zinc-500">
+      <p>Padelclubbing</p>
+      <p>Wildon, Österreich</p>
+      <p>thepadelclubbing@gmail.com</p>
+    </div>
+
+    {/* RIGHT */}
+    <div className="flex gap-4">
+      <a
+        href="#"
+        className="rounded-full border border-pink-500 px-5 py-2 text-pink-400 transition hover:bg-pink-500 hover:text-black"
       >
-        <div className="mx-auto max-w-4xl text-zinc-400">
-          <h2 className="mb-8 text-4xl font-black text-white">
-            Impressum
-          </h2>
+        Instagram
+      </a>
 
-          <div className="space-y-4 leading-relaxed">
-            <p>
-              <strong>PADELCLUBBING</strong>
-            </p>
+      <a
+        href="#"
+        className="rounded-full border border-cyan-400 px-5 py-2 text-cyan-400 transition hover:bg-cyan-400 hover:text-black"
+      >
+        TikTok
+      </a>
+    </div>
+  </div>
 
-            <p>
-              Padelclubbing
-              <br />
-              Musterstraße 1
-              <br />
-              8410 Wildon
-              <br />
-              Österreich
-            </p>
-
-            <p>
-              E-Mail: thepadelclubbing@gmail.com
-            </p>
-
-            <p>
-              Telefon: +43 664 1259454     /  +43 676 7808458
-            </p>
-
-            <p>
-              Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-              <br />
-              Max Mustermann
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-  )
-}
+  <div className="mt-12 text-center text-sm text-zinc-600">
+    © 2026 PADELCLUBBING — All Rights Reserved
+  </div>
+</footer>
 
