@@ -50,7 +50,7 @@ const sponsorenImages = [
   },
 
   {
-    image: '/sponsoren/Image4.png',
+    image: '/sponsoren/image4.png',
     link: 'https://soa-nutrition.at/',
     name: 'SoA',
   },
