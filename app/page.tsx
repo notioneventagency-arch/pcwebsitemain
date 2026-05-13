@@ -70,7 +70,7 @@ export default function Home() {
           Upcoming Events
         </h2>
 
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
           {upcomingEvents.map((event) => (
             <div
               key={event.title}
@@ -107,7 +107,7 @@ export default function Home() {
           Galerie
         </h2>
 
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {galleryImages.map((image, index) => (
             <Image
               key={index}
@@ -115,7 +115,7 @@ export default function Home() {
               alt={`Galerie Bild ${index + 1}`}
               width={600}
               height={600}
-              className="h-[300px] w-full rounded-2xl object-cover"
+              className="h-[220px] sm:h-[260px] md:h-[300px] w-full rounded-2xl object-cover"
             />
           ))}
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
             <video
               key={index}
               controls
-              className="h-[400px] w-full rounded-2xl object-cover"
+              className="h-[240px] md:h-[400px] w-full rounded-2xl object-cover"
             >
               <source src={video} type="video/mp4" />
             </video>
@@ -168,7 +168,7 @@ export default function Home() {
             type="text"
             name="name"
             placeholder="Name"
-            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-4 text-white outline-none"
+            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-3 md:p-4 text-white outline-none"
             required
           />
 
@@ -176,7 +176,7 @@ export default function Home() {
             type="email"
             name="email"
             placeholder="E-Mail"
-            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-4 text-white outline-none"
+            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-3 md:p-4 text-white outline-none"
             required
           />
 
@@ -184,13 +184,13 @@ export default function Home() {
             name="message"
             placeholder="Nachricht"
             rows={6}
-            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-4 text-white outline-none"
+            className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 p-3 md:p-4 text-white outline-none"
             required
           />
 
           <button
             type="submit"
-            className="rounded-full bg-cyan-400 px-8 py-4 font-bold text-black transition hover:scale-105"
+            className="w-full md:w-auto rounded-full bg-cyan-400 px-8 py-4 font-bold text-black transition hover:scale-105"
           >
             Nachricht senden
           </button>
