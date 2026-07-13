@@ -2,20 +2,20 @@ import Image from 'next/image'
 
 const upcomingEvents = [
   {
-    title: 'All White Padel Night',
-    date: '30 Mai 2026',
+    title: 'Padelclubbing',
+    date: '29 Aug 2026',
     place: 'Padelperformance Center Wildon',
     formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeR4HIxDmxRnfUiCjOteiQAL4J6hDuuigdbSYr2ua1cGTgL0Q/viewform?usp=header',
   },
   {
-    title: 'Sommerfest',
-    date: '27 Juni 2026',
+    title: 'Oktoberfest',
+    date: '03 Oktober 2026',
     place: 'Padelperformance Center Wildon',
     formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdqreRks-GfVrj6mno0t8QD-msGKGOh1sc3a4pndE4BH_Ut2A/viewform?usp=header',
   },
   {
-    title: 'PADELCLUBBING ',
-    date: 'XXX Juli 2026',
+    title: 'PADELCLUBBING-HALLOWEEN ',
+    date: '31 Oktober 2026',
     place: 'tbd',
     formLink: 'https://forms.gle/DEINLINK3',
   },
