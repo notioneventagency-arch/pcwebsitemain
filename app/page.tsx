@@ -103,6 +103,7 @@ export default function Home() {
             <a className="transition hover:text-white" href="#experience">Experience</a>
             <a className="transition hover:text-white" href="#gallery">Gallery</a>
             <a className="transition hover:text-white" href="#partners">Partners</a>
+            <a className="transition hover:text-white" href="#verein">Verein</a>
           </nav>
           <a href="#events" className="rounded-full bg-white px-5 py-2.5 text-xs font-black uppercase tracking-wider text-black transition hover:scale-105">Tickets</a>
         </div>
@@ -184,6 +185,76 @@ export default function Home() {
       <section id="partners" className="border-t border-white/10 px-5 py-24 lg:px-8">
         <div className="mx-auto max-w-7xl"><div className="text-center"><div className="text-[10px] font-black uppercase tracking-[0.35em] text-[#d6b46a]">Supported by</div><h2 className="mt-3 text-4xl font-black sm:text-6xl">Our partners.</h2></div>
           <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">{sponsors.map((sponsor) => <a key={sponsor.name} href={sponsor.link} target="_blank" rel="noreferrer" className="flex min-h-28 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.035] p-6 transition hover:border-white/20 hover:bg-white/[0.06]"><Image src={sponsor.image} alt={sponsor.name} width={240} height={100} className="max-h-16 w-auto object-contain" /></a>)}</div>
+        </div>
+      </section>
+
+
+
+      {/* VEREIN */}
+      <section id="verein" className="relative overflow-hidden border-t border-white/10 px-5 py-28 lg:px-8">
+        <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-[#d6b46a]/10 blur-[140px]" />
+        <div className="relative mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="text-[10px] font-black uppercase tracking-[0.35em] text-[#d6b46a]">Padelclubbing Verein</div>
+            <h2 className="mt-4 text-5xl font-black tracking-[-0.05em] sm:text-7xl">More than a <span className="font-serif font-medium italic text-[#d6b46a]">community.</span></h2>
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/50 sm:text-lg">Padelclubbing verbindet Menschen durch Sport, Events und gemeinsame Erlebnisse. Unser Verein steht für Padel, Community und unvergessliche Momente.</p>
+          </div>
+
+          <div className="mt-20 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              ['01', 'PADEL', 'Gemeinsames Spielen, Training und Turniere für Anfänger und Fortgeschrittene.'],
+              ['02', 'COMMUNITY', 'Neue Leute kennenlernen und Teil einer aktiven Padel-Community werden.'],
+              ['03', 'EVENTS', 'Turniere, Padelclubbing, gemeinsame Aktivitäten und besondere Events.'],
+              ['04', 'PEOPLE', 'Gemeinsam Sport erleben, Kontakte knüpfen und Erinnerungen schaffen.'],
+            ].map(([number, title, text]) => (
+              <div key={number} className="rounded-[2rem] border border-white/10 bg-white/[0.035] p-7 transition hover:-translate-y-1 hover:border-[#d6b46a]/40">
+                <div className="text-[10px] font-black text-[#d6b46a]">{number}</div>
+                <h3 className="mt-10 text-2xl font-black">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-white/45">{text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-24 grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <div className="text-[10px] font-black uppercase tracking-[0.35em] text-[#d6b46a]">Über uns</div>
+              <h3 className="mt-4 text-4xl font-black sm:text-6xl">Padel bringt uns <span className="font-serif font-medium italic text-[#d6b46a]">zusammen.</span></h3>
+              <p className="mt-7 text-base leading-8 text-white/50">Unser Verein möchte Menschen für den Padelsport begeistern und eine starke Community in der Steiermark aufbauen.</p>
+              <p className="mt-4 text-base leading-8 text-white/50">Dabei geht es nicht nur um sportlichen Erfolg. Wir möchten gemeinsam spielen, trainieren, Events besuchen und neue Menschen kennenlernen.</p>
+            </div>
+            <div className="rounded-[2.5rem] border border-[#d6b46a]/30 bg-[#d6b46a]/[0.07] p-8 sm:p-12">
+              <div className="text-[10px] font-black uppercase tracking-[0.35em] text-[#d6b46a]">Mitgliedschaft</div>
+              <h3 className="mt-4 text-4xl font-black">Werde Teil von Padelclubbing.</h3>
+              <p className="mt-5 text-sm leading-7 text-white/50">Du möchtest Teil unseres Vereins werden und gemeinsam mit uns Padel, Events und Community erleben?</p>
+              <div className="mt-8"><a href="mailto:DEINE-EMAIL@EMAIL.AT?subject=Mitgliedschaft%20Padelclubbing" className="inline-flex rounded-full bg-[#d6b46a] px-7 py-4 text-sm font-black uppercase tracking-wider text-black transition hover:scale-105">Mitglied werden →</a></div>
+              <p className="mt-5 text-xs leading-5 text-white/35">Tipp: Ersetze oben DEINE-EMAIL@EMAIL.AT durch eure Vereins-E-Mail-Adresse.</p>
+            </div>
+          </div>
+
+          <div className="mt-28">
+            <div className="text-center">
+              <div className="text-[10px] font-black uppercase tracking-[0.35em] text-[#d6b46a]">Downloads</div>
+              <h3 className="mt-4 text-4xl font-black sm:text-6xl">Dokumente & <span className="font-serif font-medium italic text-white/40">Infos.</span></h3>
+            </div>
+            <div className="mt-12 grid gap-4 md:grid-cols-3">
+              {[
+                ['📄', 'Statuten', 'Unsere Vereinsstatuten herunterladen und ansehen.', '/documents/statuten.pdf'],
+                ['📝', 'Mitgliedsantrag', 'Hier kannst du den Antrag für eine Mitgliedschaft herunterladen.', '/documents/mitgliedsantrag.pdf'],
+                ['🔒', 'Datenschutz', 'Informationen zur Verarbeitung und zum Schutz deiner Daten.', '/documents/datenschutz.pdf'],
+              ].map(([icon, title, text, href]) => (
+                <a key={title} href={href} target="_blank" rel="noreferrer" className="group rounded-[2rem] border border-white/10 bg-white/[0.035] p-8 transition hover:-translate-y-1 hover:border-[#d6b46a]/40">
+                  <div className="text-4xl">{icon}</div><h4 className="mt-8 text-2xl font-black">{title}</h4><p className="mt-3 text-sm text-white/45">{text}</p><div className="mt-8 text-xs font-black uppercase tracking-wider text-[#d6b46a]">PDF öffnen →</div>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-24 rounded-[2.5rem] border border-white/10 bg-white/[0.035] p-10 text-center sm:p-16">
+            <div className="text-[10px] font-black uppercase tracking-[0.35em] text-[#d6b46a]">Join us</div>
+            <h3 className="mt-5 text-4xl font-black sm:text-6xl">Werde Teil unserer <span className="font-serif font-medium italic text-[#d6b46a]">Community.</span></h3>
+            <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/50">Padel, Events und Menschen mit derselben Leidenschaft. Wir freuen uns auf dich.</p>
+            <a href="mailto:DEINE-EMAIL@EMAIL.AT?subject=Mitgliedschaft%20Padelclubbing" className="mt-8 inline-flex rounded-full bg-white px-7 py-4 text-sm font-black uppercase tracking-wider text-black transition hover:bg-[#d6b46a]">Jetzt Mitglied werden →</a>
+          </div>
         </div>
       </section>
 
