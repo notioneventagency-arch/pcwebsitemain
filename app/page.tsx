@@ -240,7 +240,7 @@ export default function Home() {
               {[
                 ['📄', 'Statuten', 'Unsere Vereinsstatuten herunterladen und ansehen.', '/documents/statuten.pdf'],
                 ['📝', 'Mitgliedsantrag', 'Hier kannst du den Antrag für eine Mitgliedschaft herunterladen.', '/documents/mitgliedsantrag.pdf'],
-                ['🔒', 'Datenschutz', 'Informationen zur Verarbeitung und zum Schutz deiner Daten.', '/documents/datenschutz.pdf'],
+                ['🔒', 'Informationen', 'Informationen zum Verein und zur Mitgliedschaft.', '/documents/datenschutz.pdf'],
               ].map(([icon, title, text, href]) => (
                 <a key={title} href={href} target="_blank" rel="noreferrer" className="group rounded-[2rem] border border-white/10 bg-white/[0.035] p-8 transition hover:-translate-y-1 hover:border-[#d6b46a]/40">
                   <div className="text-4xl">{icon}</div><h4 className="mt-8 text-2xl font-black">{title}</h4><p className="mt-3 text-sm text-white/45">{text}</p><div className="mt-8 text-xs font-black uppercase tracking-wider text-[#d6b46a]">PDF öffnen →</div>
