@@ -227,7 +227,6 @@ export default function Home() {
               <h3 className="mt-4 text-4xl font-black">Werde Teil von Padelclubbing.</h3>
               <p className="mt-5 text-sm leading-7 text-white/50">Du möchtest Teil unseres Vereins werden und gemeinsam mit uns Padel, Events und Community erleben?</p>
               <div className="mt-8"><a href="mailto:padelclubbing@gmail.com?subject=Mitgliedschaft%20Padelclubbing" className="inline-flex rounded-full bg-[#d6b46a] px-7 py-4 text-sm font-black uppercase tracking-wider text-black transition hover:scale-105">Mitglied werden →</a></div>
-              <p className="mt-5 text-xs leading-5 text-white/35">Tipp: Ersetze oben DEINE-EMAIL@EMAIL.AT durch eure Vereins-E-Mail-Adresse.</p>
             </div>
           </div>
 
